@@ -1,0 +1,237 @@
+.wrapper {
+  width: $content_width;
+  min-width: 320px;
+
+  @media all and (min-width: 992px) and (max-width: 1199px) {
+    width: $content_width_992;
+  }
+
+  @media all and (min-width: 768px) and (max-width: 991px) {
+    width: $content_width_768;
+  }
+
+  @media all and (min-width: 544px) and (max-width: 767px) {
+    width: $content_width_544;
+  }
+
+  @media all and (max-width: 543px) {
+    width: $content_width_320;
+  }
+
+  margin: 40px auto;
+  overflow: hidden;
+
+  .row {
+    margin: 0;
+  }
+
+  .jumbotron {
+    margin: 30px 45px 0 45px;
+
+    @media all and (max-width: 544px) {
+      margin: 15px 25px 0 25px;
+    }
+
+    padding-bottom: 35px;
+
+    background: #fff url(../images/backgrounds/jumbotron_bg.png) no-repeat center;
+    background-size: cover;
+
+    .container {
+      padding: 55px 55px 0 55px;
+
+      @media all and (min-width: 544px) and (max-width: 767px) {
+        padding: 35px 35px 0 35px;
+      }
+
+      @media all and (max-width: 543px) {
+        padding: 15px 15px 0 15px;
+      }
+    } // end of .container
+
+    h1 {
+      font: 48px/36px 'proxima_nova_rgbold', 'Verdana', sans-serif;
+
+      @media all and (min-width: 544px) and (max-width: 767px) {
+        font: 40px/28px 'proxima_nova_rgbold', 'Verdana', sans-serif;
+      }
+
+      @media all and (max-width: 543px) {
+        font: 20px/20px 'proxima_nova_rgbold', 'Verdana', sans-serif;
+      }
+
+      text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.42);
+    } // end of h1
+
+    p {
+      //font settings
+      font: 18px/24px 'proxima_nova_rgregular', 'Verdana', sans-serif;
+
+      @media all and (min-width: 544px) and (max-width: 767px) {
+        font: 14px/20px 'proxima_nova_rgbold', 'Verdana', sans-serif;
+      }
+
+      @media all and (max-width: 543px) {
+        font: 11px/18px 'proxima_nova_rgbold', 'Verdana', sans-serif;
+      }
+
+      //width settings
+      width: $content_width - 300px;
+
+      @media all and (min-width: 992px) and (max-width: 1199px) {
+        width: $content_width_992 - 225px;
+      }
+
+      @media all and (min-width: 768px) and (max-width: 991px) {
+        width: $content_width_768 - 185px;
+      }
+
+      @media all and (min-width: 544px) and (max-width: 767px) {
+        width: $content_width_544 - 135px;
+      }
+
+      @media all and (max-width: 543px) {
+        width: $content_width_320 - 75px;
+      }
+    } // end of p
+
+    .btn {
+      width: 186px;
+
+      @media all and (min-width: 544px) and (max-width: 767px) {
+        width: 146px;
+      }
+
+      @media all and (max-width: 543px) {
+        width: 116px;
+      }
+
+      background: #fff url(../images/buttons/btn_main.png) no-repeat center;
+      border: none;
+    } // end of .btn
+
+    .main_button {
+      font: 14px/34px 'proxima_nova_rgbold', 'Verdana', sans-serif;
+
+      @media all and (min-width: 544px) and (max-width: 767px) {
+        font: 12px/26px 'proxima_nova_rgbold', 'Verdana', sans-serif;
+      }
+
+      @media all and (max-width: 543px) {
+        font: 10px/20px 'proxima_nova_rgbold', 'Verdana', sans-serif;
+      }
+    } // end of .main_button
+  } //end of .jumbotron
+
+  .content_without_jumbotron {
+    margin: 0 45px 0 45px;
+
+    @media all and (max-width: 544px) {
+      margin: 0px 25px 0 25px;
+    }
+
+    .latest_posts {
+      float: left;
+
+      margin-bottom: 80px;
+      padding-right: 0;
+
+      .title_row {
+        .counter_tooltip {
+          width: 40px;
+          background: #fff url('../images/buttons/tooltip_bg.png') no-repeat right;
+
+          display: inline-block;
+          float: right;
+          text-align: right;
+          padding: 0 7px 0 7px;
+
+          font: 11px/24px 'proxima_nova_rgbold', 'Verdana', sans-serif;
+          color: #fff;
+        }
+      } // end of .title_row
+
+      .pull-left {
+        padding-right: 40px;
+      }
+
+      .comment {
+        padding-top: 5px;
+        font: 14px/24px 'proxima_nova_rgregular', 'Verdana', sans-serif;
+
+        @media all and (min-width: 767px) and (max-width: 991px) {
+          font: 13px/23px 'proxima_nova_rgregular', 'Verdana', sans-serif;
+        }
+
+        @media all and (min-width: 544px) and (max-width: 766px) {
+          padding-top: 10px;
+          font: 12px/22px 'proxima_nova_rgregular', 'Verdana', sans-serif;
+        }
+
+        @media all and (max-width: 543px) {
+          padding-top: 10px;
+          font: 10px/20px 'proxima_nova_rgregular', 'Verdana', sans-serif;
+        }
+
+        .morelink {
+          color: $orange_color;
+          font-weight: bold;
+        }
+      } // end of .comment
+    }
+    // end of .latest_posts
+  } //end of .content_without_jumbotron
+} // end of .wrapper
+
+
+h2 {
+  color: $olive_grey_font_color;
+}
+
+h3 {
+  font: 24px/24px 'proxima_nova_rgregular', 'Verdana', sans-serif;
+
+  @media all and (min-width: 767px) and (max-width: 991px) {
+    font: 22px/22px 'proxima_nova_rgregular', 'Verdana', sans-serif;
+  }
+
+  @media all and (min-width: 544px) and (max-width: 766px) {
+    padding-top: 10px;
+    font: 20px/20px 'proxima_nova_rgregular', 'Verdana', sans-serif;
+  }
+
+  @media all and (max-width: 543px) {
+    padding-top: 10px;
+    font: 17px/17px 'proxima_nova_rgregular', 'Verdana', sans-serif;
+  }
+
+  color: $orange_color;
+
+  display: inline-block;
+} // end of h3
+
+h4 {
+  font: italic 12px/24px 'Georgia', 'Verdana', sans-serif;
+
+  @media all and (min-width: 544px) and (max-width: 766px) {
+    padding-top: 10px;
+    font: italic 11px/22px 'Georgia', 'Verdana', sans-serif;
+  }
+
+  @media all and (max-width: 543px) {
+    padding-top: 10px;
+    font: italic 10px/20px 'Georgia', 'Verdana', sans-serif;
+  }
+
+  color: $grey_font;
+
+  margin: 0;
+
+  i {
+    padding: 5px;
+  }
+} //end of h4
+
+.orange_color {
+  color: $orange_color;
+}
