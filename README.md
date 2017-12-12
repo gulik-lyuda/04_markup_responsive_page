@@ -1,11 +1,12 @@
 # 04_markup_responsive_page
 
-Responsive page markup.
+A responsive page markup.
 
 Use:
-- html5;
-- scss;
-- gulp
+- HTML5\CSS
 - Bootstrap 3
-- media-queries
-- icon fonts
+- Media-queries
+- Icon fonts
+- Gulp
+- SCSS
+
