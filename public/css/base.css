@@ -5366,6 +5366,7 @@ button.close {
     @media all and (transform-3d), (-webkit-transform-3d) {
       .carousel-inner > .item {
         transition: transform 0.6s ease-in-out;
+        -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
         perspective: 1000px; }
         .carousel-inner > .item.next, .carousel-inner > .item.active.right {
@@ -5853,7 +5854,7 @@ h2 {
         background-color: #f3efe4;
         color: #c4b07a; }
     .page_header .header_wrapper .navbar-toggle {
-      margin: 0;
+      margin: 15px 0;
       height: 50px;
       width: 58px;
       border-color: #757f3c; }
